@@ -17,7 +17,7 @@ def make_day_table(day):
         day_table['data'] == bypass_table(ohli_data['data'])
         return day_table
     elif anissia_data['status'] == 'ok' and ohli_data['status'] == 'ok':
-        day_table = make_integrated_table(anissia_data['data'], ohli_data['data'])
+        day_table['data'] = make_integrated_table(anissia_data['data'], ohli_data['data'])
         return day_table
     else:
         day_table['data'] = None
