@@ -63,7 +63,7 @@ def make_integrated_table(anissia_data, ohli_data):
     for anissia_each in anissia_data:
         for ohli_index in range(len(ohli_data)):
             ohli_each = ohli_data[ohli_index]
-            if anissia_each['t'] == ohli_each['t'] and compare_data(anissia_each,ohli_each):
+            if anissia_each['t'] == ohli_each['t'] and compare_data(anissia_each, ohli_each):
                 base_data = bypass_each(anissia_each)
                 base_data['ohli_code'] = ohli_data.pop(ohli_index)['i']
                 integrated_table.append(base_data)
