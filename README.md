@@ -32,6 +32,7 @@
 >       | sd           | yyyyMMdd | Date when series started                |
 >       | ed           | yyyyMMdd | Date when series would end              |
 >       | a            | boolean  | Indicates if there is **not** a hiatus. |
+>
 >       *장르정보를 'string'으로 포함하는 필드가 'g' 이름으로 추가될 수 있음.*
 >
 >   * Errors
