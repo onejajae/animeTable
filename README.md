@@ -14,13 +14,13 @@
 
 ### 레퍼런스
 >* 요일별 애니 목록
->    * 인자
+>    * Parameter
 >
 >       | Field |   Input type  |              Description              |
 >       |:-----:|:-------------:|:-------------------------------------:|
 >       | day   | numeric       | Min is 0(Sunday). Max is 6(Saturday). |
 >
->   * 응답
+>   * Response
 >
 >       |     Field    |   Type   |             Description                 |
 >       |:------------:|:--------:|:---------------------------------------:|
@@ -32,18 +32,20 @@
 >       | sd           | yyyyMMdd | Date when series started                |
 >       | ed           | yyyyMMdd | Date when series would end              |
 >       | a            | boolean  | Indicates if there is **not** a hiatus. |
+>       *장르정보를 'string'으로 포함하는 필드가 'g' 이름으로 추가될 수 있음.*
 >
+>   * Errors
 >
 >
 >* 애니별 자막 목록
->   * 인자
+>   * Parameters
 >
 >       |     Field    | Input type |       Description      |
 >       |:------------:|:----------:|:----------------------:|
 >       | anissia_code | numeric    | Anissia animation code |
 >       | ohli_code    | numeric    | OHLI animation code    |
 >
->   * 응답
+>   * Response
 >
 >       |  Field  |      Type      |                           Description                           |
 >       |:-------:|:--------------:|:---------------------------------------------------------------:|
@@ -53,6 +55,10 @@
 >       | a       | string         | Subtitle download link                                          |
 >       | anissia | boolean        | Indicates if subtitle information was provided from Anissia api |
 >       | ohli    | boolean        | Indicates if subtitle information was provided from OHLI api    |
+>
+>   * Errors
+>
+>
 
 
 
