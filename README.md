@@ -23,16 +23,16 @@
 >
 >   * Response
 >
->       |     Field    |   Type   |             Description                 |
->       |:------------:|:--------:|:---------------------------------------:|
->       | anissia_code | numeric  | Anissia animation code                  |
->       | ohli_code    | numeric  | OHLI animation code                     |   
->       | s            | string   | Animation name                          |
->       | t            | HHmm     | Broadcasting air time                   |
->       | l            | string   | Animation official site url             |
->       | sd           | yyyyMMdd | Date when series started                |
->       | ed           | yyyyMMdd | Date when series would end              |
->       | a            | boolean  | Indicates if there is **not** a hiatus. |
+>       |     Field    |       Type       |             Description                 |
+>       |:------------:|:----------------:|:---------------------------------------:|
+>       | anissia_code | numeric          | Anissia animation code                  |
+>       | ohli_code    | numeric          | OHLI animation code                     |   
+>       | s            | string           | Animation name                          |
+>       | t            | string(HHmm)     | Broadcasting air time                   |
+>       | l            | string           | Animation official site url             |
+>       | sd           | string(yyyyMMdd) | Date when series started                |
+>       | ed           | string(yyyyMMdd) | Date when series would end              |
+>       | a            | boolean          | Indicates if there is **not** a hiatus. |
 >
 >       *장르정보를 'string'으로 포함하는 필드가 'g' 이름으로 추가될 수 있음.*
 >
@@ -48,15 +48,15 @@
 >       | ohli_code    | numeric    | OHLI animation code    |
 >
 >   * Response
->
->       |  Field  |         Type        |                           Description                           |
->       |:-------:|:-------------------:|:---------------------------------------------------------------:|
->       | s       | float or **string** | Series number or **BD, EX, PIC, OVA, OAD**                      |
->       | d       | yyyyMMddHHmmss      | Date-time when subtitle is uploaded                             |
->       | n       | string              | Subtitle publisher name                                         |
->       | a       | string              | Subtitle download link                                          |
->       | anissia | boolean             | Indicates if subtitle information was provided from Anissia api |
->       | ohli    | boolean             | Indicates if subtitle information was provided from OHLI api    |
+> 
+>       |  Field  |           Type         |                           Description                           |
+>       |:-------:|:----------------------:|:---------------------------------------------------------------:|
+>       | s       | float or **string**    | Series number or **BD, EX, PIC, OVA, OAD**                      |
+>       | d       | string(yyyyMMddHHmmss) | Date-time when subtitle is uploaded                             |
+>       | n       | string                 | Subtitle publisher name                                         |
+>       | a       | string                 | Subtitle download link                                          |
+>       | anissia | boolean                | Indicates if subtitle information was provided from Anissia api |
+>       | ohli    | boolean                | Indicates if subtitle information was provided from OHLI api    |
 >
 >   * Errors
 >
