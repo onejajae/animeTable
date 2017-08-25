@@ -48,20 +48,24 @@
 >
 >   * Response
 >
->       |  Field  |      Type      |                           Description                           |
->       |:-------:|:--------------:|:---------------------------------------------------------------:|
->       | s       | float          | Series number                                                   |
->       | d       | yyyyMMddHHmmss | Date-time when subtitle is uploaded                             |
->       | n       | string         | Subtitle publisher name                                         |
->       | a       | string         | Subtitle download link                                          |
->       | anissia | boolean        | Indicates if subtitle information was provided from Anissia api |
->       | ohli    | boolean        | Indicates if subtitle information was provided from OHLI api    |
+>       |  Field  |         Type        |                           Description                           |
+>       |:-------:|:-------------------:|:---------------------------------------------------------------:|
+>       | s       | float or **string** | Series number or **BD, EX, PIC, OVA, OAD**                      |
+>       | d       | yyyyMMddHHmmss      | Date-time when subtitle is uploaded                             |
+>       | n       | string              | Subtitle publisher name                                         |
+>       | a       | string              | Subtitle download link                                          |
+>       | anissia | boolean             | Indicates if subtitle information was provided from Anissia api |
+>       | ohli    | boolean             | Indicates if subtitle information was provided from OHLI api    |
 >
 >   * Errors
 >
 >
 
-
+### 앞으로 개발할 사항
+>   1. 데이터베이스 또는 pickle 기반 캐싱
+>       * 각 API 서버의 상태에 대응하여 보다 유연한 API 제공 가능
+>   2. NyaaTorrents 연동
+>       * 약관 상 가능할지 미지수
 
 
 
