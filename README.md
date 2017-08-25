@@ -1,8 +1,9 @@
 # 애니편성표 통합 API
 
 ### 다음 두 API를 한번에 볼 수 있도록 해줍니다.
->   1. OHLI 애니편성표     : http://ohli.moe/api/
->   2. Anissia 애니편성표  : http://www.anissia.net/?m=1&b=4
+>   1. Anissia 애니편성표  : http://www.anissia.net/?m=1&b=4
+>   2. OHLI 애니편성표     : http://ohli.moe/api/
+
 
 
 ### 현재 사용가능한 기능
